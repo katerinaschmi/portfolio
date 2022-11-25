@@ -7,7 +7,7 @@ export default function ProjectsSectionpage() {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch("https://wordpress.kschmi.dk/wp-json/wp/v2/posts?_embed");
+            const response = await fetch("https://wordpress.kschmi.dk/wp-json/wp/v2/test?_embed");
             const data = await response.json();
             setPosts(data);
         }
@@ -19,9 +19,9 @@ export default function ProjectsSectionpage() {
             <div>
                 <h2>Projects</h2>
                 <div>
-                    {posts.slice(0).reverse().map(post => (
+                    {posts.map(post => (
                         <ProjectItem key={post.id} post={post} />
-                    ))}
+                    ))} 
                 </div>
             </div>
             <Footer/>

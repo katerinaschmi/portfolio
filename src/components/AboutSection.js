@@ -9,15 +9,20 @@ import { Link } from 'react-router-dom';
 
 export default function AboutSection () {
     return (
-        <div className='about-landing'>
+        <div className='about-landing' id='aboutsection'>
             <h1 className='mainheader'>Hello!</h1>
             <div className='mainintro'>
                 <div className='aboutintro'>
-                    <p className='aboutp'>My name is Kateřina Schmidtová, but I prefer to be called Kate/Katie and I am 20 years old. I'm from Czech Republic, yes the famous cheap (but delicious, as I heard) beer country. I come from a big family so I am very social and communicative. I am always ready to meet someone new and explore the new opportunities held upon us together with them.</p>
-                    <p className='aboutp'>Aaand... this is my portfolio. It should cover at least a few of my hobbies, so if you are interested, scroll down. And if you want to know more about me, my life and maybe some less relevant passions, you can just click the button bellow.</p>
+                    <p className='aboutp'>My name is Kateřina Schmidtová, but I prefer to be called Kate/Katie. I am 20 years old from Czech Republic, yes, the famous cheap (but delicious, as I heard) beer country.</p>
+                    <p className='aboutp'>This is my portfolio where you can have a look into my skills, experience, and hobbies, so SCROLL DOWN if you are interested in seeing more.</p>
+                    <p className='aboutp'>And if you want to get to know me better, find out about my life and maybe some other passions I have, you can just click the "Read more" button. :)</p>
+                    <p className='aboutp'>For more professional approach, you can also chek out my CV.</p>
                     <div>
-                        <Link to="/about">
+                        <Link to="/error">
                             <button type='button' className='button' id='button-home'>Read more</button>
+                        </Link>
+                        <Link to="/error">
+                            <button type='button' className='button' id='button-home'>My CV</button>
                         </Link>
                     </div>
                 </div>

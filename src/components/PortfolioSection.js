@@ -14,12 +14,12 @@ export default function PortfolioSection() {
                     <a href='/projects'>
                         <img src={projects} alt='projects' className='projetcs-icon'/>
                         <div className='sectionsoverlay'>
-                            <div className='overlaytext'>Projects</div>
+                            <div className='overlaytext'>Projects & Clients</div>
                         </div>
                     </a>
                 </div>
                 <div className='art-link'>
-                    <a href='/art'>
+                    <a href='/error'>
                     <img src={art} alt='art' className='art-icon'/>
                         <div className='sectionsoverlay'>
                             <div className='overlaytext'>Art</div>
@@ -27,7 +27,7 @@ export default function PortfolioSection() {
                     </a>
                 </div>
                 <div className='video-link'>
-                    <a href='/videoproduction'>
+                    <a href='/error'>
                         <img src={videoprod} alt='videos' className='videoprod-icon'/>
                         <div className='sectionsoverlay'>
                             <div className='overlaytext'>Video Production & Edit</div>
@@ -37,7 +37,7 @@ export default function PortfolioSection() {
             </div>
             <div className="portfolio-sections2">
                 <div className='design-link'>
-                    <a href='/graphicdesign'>
+                    <a href='/error'>
                         <img src={design} alt='design' className='design-icon'/>
                         <div className='sectionsoverlay'>
                             <div className='overlaytext'>Graphic Design</div>
@@ -45,7 +45,7 @@ export default function PortfolioSection() {
                     </a>
                 </div>
                 <div className='some-link'>
-                    <a href='/socialmedia'>
+                    <a href='/error'>
                         <img src={socialmedia} alt='some' className='some-icon'/>
                         <div className='sectionsoverlay'>
                             <div className='overlaytext'>Social Media</div>
@@ -53,7 +53,7 @@ export default function PortfolioSection() {
                     </a>
                 </div>
                 <div className='programming-link'>
-                    <a href='/programming'>
+                    <a href='/error'>
                         <img src={programming} alt='programming' className='programming-icon'/>
                         <div className='sectionsoverlay'>
                             <div className='overlaytext'>Programming</div>

@@ -7,7 +7,7 @@ export default function SlideItem({ post }) {
                 <h1 className="testiheader">{parse(post.title.rendered)}</h1>
             </div>
             <div>
-                <blockquote className="testicontent">{parse(post.content.rendered)}</blockquote>
+                <p className="testicontent">{parse(post.content.rendered)}</p>
             </div>
         </div>
     );

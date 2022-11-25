@@ -9,9 +9,9 @@ export default function Footer() {
         <div className='footersec'>
             <nav className="footernav">
                 <NavLink to="/home">Home</NavLink>
-                <NavLink to="/about">About me</NavLink>
+                <NavLink to="/error">About me</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/resume">CV</NavLink>
+                <NavLink to="/error">CV</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
             </nav>
             <div>

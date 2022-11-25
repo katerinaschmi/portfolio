@@ -1,6 +1,5 @@
 import HomeLanding from "../components/HomeLanding";
 import AboutSection from "../components/AboutSection";
-import InterestsSection from "../components/InterestsSection";
 import PortfolioSection from "../components/PortfolioSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ContactSection from "../components/ContactSection";
@@ -11,7 +10,6 @@ export default function Homepage() {
         <section className="page">
             <HomeLanding/>
             <AboutSection/>
-            <InterestsSection/>
             <PortfolioSection/>
             <TestimonialsSection
                 options={{
@@ -25,7 +23,7 @@ export default function Homepage() {
                 adaptiveHeight: true,
                 arrows: false,
                 autoplay: true,
-                autoplaySpeed: 9000
+                autoplaySpeed: 8500
             }}/>
             <ContactSection/>
             <Footer/>

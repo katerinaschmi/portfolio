@@ -2,9 +2,11 @@ import instagram from '../img/instagram.png';
 import facebook from '../img/facebook.png';
 import linkedin from '../img/linkedin.png';
 import github from '../img/github.png';
+import scrollupbutton from '../img/scrollupbutton.png';
 
 export default function ContactSection() {
     return (
+        <section className='contactsection'>
         <div className="contactsec">
             <div>
                 <h1 className="mainheader">Contact me!</h1>
@@ -18,22 +20,27 @@ export default function ContactSection() {
                 <p><a href="tel:+4552797168" className='phonelink'>Phone: +45 52 79 71 68</a></p>
             </div>
             <div className='theform'>
-                <form className='form'>
+                <form action="https://formsubmit.co/26c2816adcfb8223d61643eae569773f" method="POST" className='form'>
+                    <input type="hidden" name="_subject" value="PORTFOLIO" required/>
+                    <input type="hidden" name="_next" value="https://portfolio.kschmi.dk/thankyou"/>
+                    <input type="hidden" name="_captcha" value="false" required/>
+
                     <label className='formlabel'>Name</label>
-                    <input type='text' name='name' placeholder='Your name' className='textinput'/>
+                    <input placeholder='Your name' className='textinput' type="text" name="name" required />
 
                     <label className='formlabel'>Email</label>
-                    <input type='text' name='email' placeholder='Your email' className='textinput'/>
-
-                    <label className='formlabel'>Subject</label>
-                    <input type='text' name='subject' placeholder='The subject' className='textinput'/>
+                    <input placeholder='Your email' className='textinput' type="email" name="email" required />
 
                     <label className='formlabel'>Message</label>
-                    <textarea name='message' placeholder='Write your message...' className='messageinput'/>
+                    <textarea placeholder='Write your message...' className='messageinput' name='message'/>
 
-                    <input type='submit' value='Send' className='submitbtn'/>
+                    <button type="submit" className='submitbtn'>Send</button>
                 </form>
+
             </div>
+            
         </div>
+        <a href="#navbar"><img src={scrollupbutton} alt='scrollbutton' className='scrollupbutton'/></a>
+        </section>
     )
 }

@@ -1,0 +1,463 @@
+/******* NAVIGATION BAR *******/
+.navbar {
+    background-color: #4c436f;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .navbar a {
+    font-family: Cupcakes;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 27px;
+  }
+  
+  .navbar a:hover {
+    color: #bdbdbd;
+  }
+
+/******* HOMEPAGE Landing section ********/
+.hp-landing {
+    background-image: url(./img/Welcome-bgr.png);
+    background-size: 100%;
+    text-align: center;
+    padding-top: 18%;
+  }
+  
+  .welcomeheader2 {
+    font-family: Cupcakes;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 6px #000000;
+    margin-bottom: 45px;
+  }
+  
+  .welcomeheader1 {
+    font-family: Gellatio-Regular;
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px 6px #000000;
+  }
+
+/******* HOMEPAGE About me ********/
+.about-landing {
+    background-image: url(./img/1.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+  }
+  
+  .mainintro {
+    display: flex;
+  }
+  
+  .aboutpic {
+    margin-right: 13%;
+  }
+  
+  .aboutp {
+    color: white;
+    font-family: Candara;
+    font-size: 25px;
+    padding-left: 15%;
+    padding-top: 35px;
+    padding-right: 25%;
+  }
+  
+  .mepic {
+    height: 570px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px #2e2e2e;
+  }
+  
+  .iconcontainer {
+    display: flex;
+    margin-top: 75px;
+    margin-left: 5%;
+  }
+  
+  .oneadj {
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .abouticon {
+    height: 130px;
+    padding-bottom: 30px;
+  }
+  
+  .icondesc {
+    color: white;
+    font-family: Cupcakes;
+    font-size: 22px;
+  }
+
+/******* HOMEPAGE Portfolio ********/
+.portfoliosec {
+    background-image: url(./img/Stream-bgr.png);
+  }
+  
+  .portfolio-sections1 {
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+  }
+  
+  .portfolio-sections2 {
+    margin-top: 30px;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+  }
+  
+/* Hover overlay */
+  .sectionsoverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    border-radius: 18px;
+  }
+  
+  .overlaytext {
+    font-family: Cupcakes;
+    color: white;
+    font-size: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+/* Projects and clients */
+  .projects-link {
+    background-color: #4c436f;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    margin-left: 3%;
+    position: relative;
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .projetcs-icon {
+    height: 250px;
+  }
+  
+  .projects-link:hover .sectionsoverlay{
+    opacity: 0.8;
+  }
+  
+/* Art */
+  .art-link {
+    background-color: #9f86c0;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    width: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .art-icon {
+    height: 250px;
+  }
+  
+  .art-link:hover .sectionsoverlay {
+    opacity: 0.8;
+  }
+  
+/* Video */
+  .video-link {
+    background-color: #c6b9df;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    position: relative;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .videoprod-icon {
+    height: 250px;
+  }
+  
+  .video-link:hover .sectionsoverlay {
+    opacity: 0.8;
+  }
+  
+/* Graphic design */
+  .design-link {
+    background-color: #c6b9df;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    margin-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    position: relative;
+    width: 30%;
+  }
+  
+  .design-icon {
+    height: 250px;
+  }
+  
+  .design-link:hover .sectionsoverlay {
+    opacity: 0.8;
+  }
+  
+/* Social media */
+  .some-link {
+    background-color: #4c436f;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 35%;
+  }
+  
+  .some-icon {
+    height: 250px;
+  }
+  
+  .some-link:hover .sectionsoverlay {
+    opacity: 0.8;
+  }
+  
+/* Programming */
+  .programming-link {
+    background-color: #9f86c0;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 5px 5px 20px #2e2e2e;
+    position: relative;
+    width: 25%;
+  }
+  
+  .programming-icon {
+    height: 250px;
+  }
+  
+  .programming-link:hover .sectionsoverlay {
+    opacity: 0.8;
+  }
+
+/******* HOMEPAGE Testimonials ********/
+.testimonialsec {
+    background-image: url(./img/bubblebgr.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .testipost {
+    background-image: url(./img/testimonials.png);
+    background-size: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10%;
+  }
+  
+  .testiheader {
+    font-family: Cupcakes;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .testicontent p {
+    font-family: Candara;
+    color: white;
+    font-size: 21.5px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .testicontent blockquote {
+    font-family: Candara;
+    color: white;
+    font-size: 23px;
+    width: 35vw;
+    text-align: center;
+    line-height: 27px;
+  }
+  
+  .slick-dots {
+    background-color: #4c436f;
+  }
+
+/****** CONTACT ******/
+.contactsection {
+    background-image: url(./img/1.png);
+    background-size: 100%;
+  }
+  .contactsec {
+    display: flex;
+    padding-top: 5%;
+  }
+  
+/* Left side*/
+  .contactp {
+    color: white;
+    font-family: Candara;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding-right: 30%;
+  }
+  
+  .someicons {
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40%;
+  }
+  
+  .someicon {
+    height: 100px;
+  }
+  
+  .phonelink {
+    text-decoration: none;
+    color: white;
+    font-family: Candara;
+    font-size: 25px;
+    margin-left: 10%;
+  }
+  
+  .phonelink:hover {
+    text-shadow: 2px 2px 6px #000000;
+  }
+  
+/*Right side*/
+  .theform {
+    margin-right: 20%;
+    margin-top: 4%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formlabel {
+    font-family: Cupcakes;
+    color: white;
+    font-size: 40px;
+    margin-top: 3%;
+  }
+  
+  .textinput {
+    font-family: Candara;
+    border-radius: 5px;
+    border: 2px solid #747474;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 8px;
+    margin-top: 2%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+  }
+  
+  .messageinput {
+    font-family: Candara;
+    border-radius: 5px;
+    border: 2px solid #747474;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-right: 120px;
+    padding-left: 8px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .submitbtn {
+    background-color: #9f86c0;
+    font-size: 40px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Cupcakes;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    margin-right: 35%;
+  }
+  
+  .submitbtn:hover {
+    background-color: #4c436f;
+    color: #000000;
+    box-shadow: inset 0px 0px 0px 4px #000000;
+    cursor: pointer;
+  }
+
+/****** FOOTER ******/
+.footersec {
+    background-color: #4c436f;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+  }
+  
+  .footernav {
+    margin-top: 40px;
+  }
+  
+  .footernav a {
+    font-family: Cupcakes;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 27px;
+  }
+  
+  .footernav a:hover {
+    color: #bdbdbd;
+  }
+  
+  .footericon {
+    height: 60px;
+    padding: 20px;
+  }
+  
+  .copyright {
+    font-family: Cupcakes;
+    color: white;
+    font-size: 27px;
+    margin-top: 40px;
+  }
